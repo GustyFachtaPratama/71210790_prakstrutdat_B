@@ -6,7 +6,7 @@ class CircularQueue:
 
     def enqueue(self, data):
         if ((self.rear + 1) % self.size == self.front):
-            print(" Antrian penuh")
+            print("Antiran penuh")
         elif (self.front == -1):
             self.front = 0
             self.rear = 0
@@ -17,7 +17,7 @@ class CircularQueue:
 
     def dequeue(self):
         if (self.front == -1):
-            print("Antrian kosong")
+            print("Tidak ada Antrian ")
         elif (self.front == self.rear):
             temp = self.queue[self.front]
             self.front = -1
@@ -30,7 +30,7 @@ class CircularQueue:
 
     def display(self):
         if (self.front == -1):
-            print("Antrian kosong")
+            print("Tidak ada Antrian ")
         elif (self.rear >= self.front):
             print("Yang ada pada antrian adalah:",
                   end=" ")

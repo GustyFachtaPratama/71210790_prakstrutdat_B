@@ -111,10 +111,9 @@ class PriorityQueueUnsorted:
                 bantu = bantu._next
     
     def removePrioSekaligus(self): # untuk menghapus data priority terkecil sekaligus
-        if self.is_empty() == False:
-            bantu = self._head
-            while bantu != None:
-                pass
+        bantu = self.peek()
+        while bantu[1] == self.peek()[1]:
+            self.remove()
     def fungsiTambahan(self): # Anda dapat membuat fungsi tambahan jika dibutuhkan    
         pass
         # tulis kode Anda di sini
